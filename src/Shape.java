@@ -1,9 +1,6 @@
 public abstract class Shape {
     //instance variable declaration
 
-
-
-
     //Getters
 
     //Abstract methods
