@@ -18,4 +18,14 @@ public class Circle extends Shape{
     public double area() {
         return Math.PI * this.radius * this.radius;
     }
+
+    @Override
+    public boolean contains(Posn p) {
+        double x = p.getX();
+        double y = p.getY();
+        double cx = getCenter().getX();
+        double cy = getCenter().getY();
+        double distance = Math.sqrt((x - cx) * (x - cx) + (y - cy) * (y - cy));
+        return distance < this.radius;
+    }
 }
