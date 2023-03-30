@@ -1,6 +1,6 @@
 public class Rectangle extends Shape {
-    double width;
-    double length;
+    private double width;
+    private double length;
 
     public Rectangle(Posn center, double width, double length) {
         super(center);
@@ -18,7 +18,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double perimeter() {
-        return 2 * (this.width + this.length);
+        return 2 *(this.width + this.length);
     }
 
     @Override
